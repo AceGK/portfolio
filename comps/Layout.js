@@ -1,6 +1,6 @@
 
 import Head from 'next/head';
-import Hero from './hero';
+import Hero from './Hero';
 import Footer from "./Footer";
 import Nav from "./Nav";
 
