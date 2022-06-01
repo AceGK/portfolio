@@ -1,0 +1,26 @@
+.nav ul {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    gap:10px;
+    li {
+        border: 1px solid var(--accent1);
+    }
+    a { // active state styling is located in globals.scss
+        display:flex;
+        flex-direction:column;
+        gap:5px;
+        text-decoration: none;
+        padding:25px;
+        opacity:.5;
+        &:hover{
+            opacity:1; 
+        }
+    }
+    h3{
+        letter-spacing: 1px;
+        font-size:1.2rem;
+    }
+}
