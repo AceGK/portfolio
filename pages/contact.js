@@ -17,7 +17,7 @@ function Contact() {
 
             {/* <div data-netlify-recaptcha="true"></div> */}
             <br></br>
-            <button type="submit" class="project-btn">Send</button>
+            <button type="submit" className="project-btn">Send</button>
         </form>
     </div>
 
