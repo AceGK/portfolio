@@ -17,7 +17,7 @@ i.projectThumb {
 }
 
 .title {
-  color:rgb(245, 245, 245);
+  color:var(--text);
   font-size: 1.2em;
   padding-left:15px;
   /* text-transform: uppercase; */
@@ -26,14 +26,14 @@ i.projectThumb {
   line-height: 1.2em;
 }
 
-.flex {
+.summary {
   padding:15px 15px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   &:hover {
     cursor: pointer;
-    .toggleArrow i {
+    .arrow i {
       color:var(--text);
     }
   }
@@ -47,8 +47,6 @@ i.projectThumb {
   }
 }
 
-
-
 .icons {
   font-size:30px;
   max-width:400px;
@@ -60,10 +58,6 @@ i.projectThumb {
       padding-left:0px;
     }
   }
-}
-
-.projectSvg {
-  fill:rgb(240, 240, 240);
 }
 
 .buttons {

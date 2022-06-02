@@ -12,21 +12,21 @@ class MyDocument extends Document {
         <Head>
           <link 
             rel="preload"
-            href="/public/fonts/UnitedKingdom"
+            href="/fonts/UnitedKingdom.woff"
             as="font"
             type="font/woff"
             crossOrigin="anonymous"
           />
           <link 
             rel="preload"
-            href="/public/fonts/Orbitron-Regular"
+            href="/fonts/Orbitron-Regular.woff"
             as="font"
             type="font/woff"
             crossOrigin="anonymous"
           />
           <link 
             rel="preload"
-            href="/public/fonts/SourceCodePro-Regular"
+            href="/fonts/SourceCodePro-Regular.woff"
             as="font"
             type="font/woff"
             crossOrigin="anonymous"

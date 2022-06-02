@@ -97,6 +97,7 @@ h2, h3 {
 h4 {
   font-family:var(--subtitle-font);
   letter-spacing:1px;
+  font-size:1.2rem;
 }
 
 p {
@@ -112,7 +113,7 @@ a {
 .page-container {
   margin-top:-1px;
   padding:25px;
-  border:1px solid rgb(100, 100, 100);
+  border:1px solid var(--accent1);
   z-index: -1;
 }
 

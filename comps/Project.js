@@ -11,7 +11,7 @@ export default class Projects extends Component {
 					render={({ on, toggle }) => (
 						<div className={styles.project} >
 							<div onClick={toggle} className={styles.link}>
-								<div className={styles.flex}>
+								<div className={styles.summary}>
 									{project.logo}
 									<div className={styles.title}>
 										<h4>
