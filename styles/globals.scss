@@ -83,6 +83,7 @@ body {
 
 * {
   color:var(--text);
+  font-family:var(--body-font);
 }
 
 h1 {
@@ -94,7 +95,7 @@ h2, h3 {
   font-family:var(--subtitle-font);
 }
 
-p {
+p, a {
   font-family:var(--body-font);
 }
 
