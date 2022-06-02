@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?92powh');
-  src:  url('fonts/icomoon.eot?92powh#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?92powh') format('truetype'),
-    url('fonts/icomoon.woff?92powh') format('woff'),
-    url('fonts/icomoon.svg?92powh#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?t7iqd7');
+  src:  url('fonts/icomoon.eot?t7iqd7#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?t7iqd7') format('truetype'),
+    url('fonts/icomoon.woff?t7iqd7') format('woff'),
+    url('fonts/icomoon.svg?t7iqd7#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-postgre:before {
+  content: "\e9c0";
+  color: #336791;
+}
+.icon-redux:before {
+  content: "\e9bf";
+  color: #764abc;
+}
 .icon-typescript:before {
   content: "\e9be";
   color: #007acc;

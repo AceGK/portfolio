@@ -1,28 +1,22 @@
-
 .hero {
     margin-bottom:25px;
-
     div {
         border-left:1px solid rgb(100, 100, 100);
         border-right:1px solid rgb(100, 100, 100);
         border-top:1px solid rgb(100, 100, 100);
     }
-
     h1 {
         text-align:center;
         margin:0px;
         padding:25px 0px;    
         font-size:6rem;
     }
-
     h2 {
         display: flex;
         margin:0px;
         margin-top:-9px;
         font-size:1.2rem;
         letter-spacing: 5px; 
-
-
         &::before {
             content: "";
             flex: 1 1;

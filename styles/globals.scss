@@ -94,13 +94,18 @@ h2, h3 {
   text-transform: uppercase;
   font-family:var(--subtitle-font);
 }
+h4 {
+  font-family:var(--subtitle-font);
+  letter-spacing:1px;
+}
 
 p {
   padding-bottom:15px;
   line-height:1.4rem;
+  font-family:var(--body-font);
 }
 
-p, a {
+a {
   font-family:var(--body-font);
 }
 

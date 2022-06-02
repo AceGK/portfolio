@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 314.43 315.09" width="64" height="64">
+    <defs>
+        <style>
+            .Hal-cls-1 {
+                fill: url(#radial-gradient);
+            }
+
+            .Hal-cls-2 {
+                fill: url(#linear-gradient);
+            }
+
+            .Hal-cls-3 {
+                fill: url(#radial-gradient-2);
+            }
+
+            .Hal-cls-4 {
+                fill: url(#radial-gradient-3);
+            }
+        </style>
+        <radialGradient id="radial-gradient" cx="157.21" cy="157.54" r="118" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fff7ff" />
+            <stop offset="0.01" stop-color="#fff6ea" />
+            <stop offset="0.02" stop-color="#fff5b2" />
+            <stop offset="0.04" stop-color="#fff25b" />
+            <stop offset="0.06" stop-color="#fff000" />
+            <stop offset="0.08" stop-color="#feed01" />
+            <stop offset="0.1" stop-color="#fde402" />
+            <stop offset="0.11" stop-color="#fad405" />
+            <stop offset="0.13" stop-color="#f6bd09" />
+            <stop offset="0.14" stop-color="#f0a00f" />
+            <stop offset="0.15" stop-color="#ea7d15" />
+            <stop offset="0.16" stop-color="#e2531d" />
+            <stop offset="0.17" stop-color="#df4220" />
+            <stop offset="0.25" stop-color="#d7401f" />
+            <stop offset="0.37" stop-color="#c0391c" />
+            <stop offset="0.52" stop-color="#9a2e16" />
+            <stop offset="0.7" stop-color="#661e0f" />
+            <stop offset="0.9" stop-color="#250b05" />
+            <stop offset="1" />
+        </radialGradient>
+        <linearGradient id="linear-gradient" x1="157.21" y1="315.09" x2="157.21" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#383838" />
+            <stop offset="0.27" stop-color="#474747" />
+            <stop offset="0.68" stop-color="#565656" />
+            <stop offset="1" stop-color="#5c5c5c" />
+        </linearGradient>
+        <radialGradient id="radial-gradient-2" cx="157.22" cy="157.55" r="137.76" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#3b3b3b" />
+            <stop offset="0.37" stop-color="#383838" />
+            <stop offset="0.61" stop-color="#303030" />
+            <stop offset="0.81" stop-color="#212121" />
+            <stop offset="0.98" stop-color="#0d0d0d" />
+            <stop offset="1" stop-color="#0a0a0a" />
+        </radialGradient>
+        <radialGradient id="radial-gradient-3" cx="157.22" cy="136.78" r="106.58"
+            gradientTransform="translate(0 12.78) scale(1 0.91)" gradientUnits="userSpaceOnUse">
+            <stop offset="0.47" stop-color="#fff" stop-opacity="0" />
+            <stop offset="0.5" stop-color="#fff" stop-opacity="0.05" />
+            <stop offset="0.56" stop-color="#fff" stop-opacity="0.2" />
+            <stop offset="0.65" stop-color="#fff" stop-opacity="0.43" />
+            <stop offset="0.75" stop-color="#fff" stop-opacity="0.74" />
+            <stop offset="0.83" stop-color="#fff" />
+        </radialGradient>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <path class="Hal-cls-1"
+                d="M157.05,275.67A118,118,0,0,1,39.34,157.48C39.45,92.06,92.67,38.9,157.56,39.42,223,39.94,275.47,92.83,275.09,157.8,274.71,223.24,222,275.92,157.05,275.67Z" />
+            <path class="Hal-cls-2"
+                d="M157.22,315.09C70.41,315.1-.15,244.32,0,157.37S70.49,0,157.2,0,314.58,70.77,314.43,157.71,243.89,315.09,157.22,315.09ZM294.76,160.68c2.32-75.25-57.86-138.53-134-141C85.34,17.31,22.11,77.52,19.68,154c-2.41,75.67,57.78,139,134.4,141.35C229.3,297.72,292.4,237.3,294.76,160.68Z" />
+            <path class="Hal-cls-3"
+                d="M294.76,160.68c-2.36,76.62-65.46,137-140.68,134.7C77.46,293,17.27,229.7,19.68,154c2.43-76.51,65.66-136.72,141-134.31C236.9,22.15,297.08,85.43,294.76,160.68Zm-137.71,115c64.9.25,117.66-52.43,118-117.87.38-65-52.14-117.86-117.53-118.38C92.67,38.9,39.45,92.06,39.34,157.48A118,118,0,0,0,157.05,275.67Z" />
+            <path class="Hal-cls-4"
+                d="M143.93,59.93c1,8.24,1.95,16.13,2.83,23.42L118.45,93.48c-3.29-6.53-6.86-13.62-10.59-21C118.92,65.82,130.73,62,143.93,59.93Zm23.79,23.38L196,93.54l10.61-21.11A96.92,96.92,0,0,0,170.43,60C169.46,68.36,168.53,76.33,167.72,83.31Zm72.8,21-15.7-18.86c-5.58,7-10.57,13.33-15.36,19.39l11.61,15ZM93.34,119.82l11.63-15L89.56,85.41,73.92,104.35Z" />
+        </g>
+    </g>
+</svg>
