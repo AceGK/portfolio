@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Projects from '../comps/Project';
 
-// import { ReactComponent as AK } from '../public/svg/ak.svg';
-// import { ReactComponent as PLPC } from '../public/svg/plpc.svg';
-// import { ReactComponent as Hal9000m } from '../public/svg/hal9000m.svg';
+import AK from '../public/svg/ak.svg';
+import PLPC from '../public/svg/plpc.svg';
+import Hal from '../public/svg/hal9000m.svg';
 
 
 export default class ProjectData extends Component {
@@ -11,7 +11,7 @@ export default class ProjectData extends Component {
     projects: [
     {
       title: 'This Site',
-      logo:<i className="icon-info_outline"></i>,  
+      logo:<AK style={{fill : 'white'}}/>,  
       icons: [
         <i className="icon-html5" title="HTML5" key="1"></i>,
         <i className="icon-css31" title="CSS3" key="2"></i>,
@@ -29,7 +29,7 @@ export default class ProjectData extends Component {
     },
     {
       title: 'Purple Lotus', 
-      logo:<i className="icon-info_outline"></i>,
+      logo:<PLPC />,
       icons:  [
         <i className="icon-html5" title="HTML5" key="1"></i>,
         <i className="icon-css31" title="CSS3" key="2"></i>,
@@ -46,7 +46,7 @@ export default class ProjectData extends Component {
     },
     {
       title: 'HAL 9000 Rainmeter', 
-      logo:<i className="icon-info_outline"></i>,
+      logo:<Hal />,
       icons:  [
         <i className="icon-rainmeter2" title="Rainmeter" key="1"></i>,
         <i className="icon-lua" title="LUA" key="2"></i>
