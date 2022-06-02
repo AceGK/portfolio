@@ -21,8 +21,8 @@ export default class ProjectData extends Component {
       ], 
       description: 'My portfolio site, showcasing my work and personal projects', 
       buttons: [ 
-        <a href="https://github.com/AceGK/ace-react-site" target="_blank">
-            <button className="project-btn"><i className="icon-github" title="Github"></i> Github</button>
+        <a href="https://github.com/AceGK/ace-react-site" className="btn" target="_blank">
+            <i className="icon-github" title="Github"></i> Github
          </a>,
       ],
       id: 1 
@@ -38,8 +38,8 @@ export default class ProjectData extends Component {
       ],   
       description:'Website for a cannabis dispensary located in San Jose, CA.', 
       buttons: [ 
-        <a href="https://plpcsanjose.com" target="_blank" rel="noopener noreferrer">
-            <button className="project-btn">View Site</button>
+        <a href="https://plpcsanjose.com" className="btn" target="_blank">
+            View Site
          </a>,
       ],
       id: 2
@@ -53,9 +53,12 @@ export default class ProjectData extends Component {
       ],   
       description: 'Rainmeter skin modeled after HAL 9000 that monitors PC performance.', 
       buttons: [ 
-        <a href="https://github.com/AceGK/Hal9000-Rainmeter">
-            <button className="project-btn"><i className="icon-github" title="Github"></i> Github</button>
+        <a href="https://github.com/AceGK/Hal9000-Rainmeter" className="btn" target="_blank">
+            <i className="icon-github" title="Github"></i> Github
          </a>,
+         <a href="https://github.com/AceGK/Hal9000-Rainmeter" className="btn" target="_blank">
+         <i className="icon-github" title="Github"></i> Github
+      </a>,
       ],
       id: 3 
     }

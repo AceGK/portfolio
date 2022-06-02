@@ -1,6 +1,18 @@
 .footer {
-    margin:20px auto;
-    display:flex;
-    gap:10px;
-    justify-content: center;
+	margin:20px auto;
+	display:flex;
+	gap:10px;
+	justify-content: center;
+	i {
+		color:#333;
+		font-size:3em;
+		margin:10px;
+		text-decoration: none;
+		&:hover {
+			color:rgb(245, 245, 245);
+		}
+	}
+	a {
+		text-decoration: none;
+	}
 }

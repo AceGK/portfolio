@@ -116,6 +116,26 @@ a {
   z-index: -1;
 }
 
+.btn {
+  background:var(--bkg1);
+  border:1px solid var(--accent1);
+  color:var(--accent1);
+  padding:10px 20px;
+  font-size:1rem;
+  text-decoration: none;
+  display:block;
+  width:fit-content;
+  i {
+    color:var(--accent1);
+  }
+  &:hover, &:hover i {
+    color: var(--bkg1);
+    background:var(--text);
+  }
+}
+
+
+// about page boxes
 .skillsBox {
   margin-bottom:15px;
 
