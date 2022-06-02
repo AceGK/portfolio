@@ -75,7 +75,7 @@
 
 
 body {
-  width:700px;
+  width:var(--siteW);
   max-width:90%;
   margin:10px auto;
   background-color:var(--bkg1);
@@ -95,10 +95,65 @@ h2, h3 {
   font-family:var(--subtitle-font);
 }
 
+p {
+  padding-bottom:15px;
+  line-height:1.4rem;
+}
+
 p, a {
   font-family:var(--body-font);
 }
 
-.active {
-  opacity:1!important;
+.page-container {
+  margin-top:-1px;
+  padding:25px;
+  border:1px solid rgb(100, 100, 100);
+  z-index: -1;
+}
+
+.skillsBox {
+  margin-bottom:15px;
+
+  &:not(:last-child) {
+  margin:35px 0px 45px 0px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+    display: flex;
+    flex-direction: row;
+    margin:0px;
+    margin-top:0px;
+    &::before {
+      content: "";
+      flex-basis: 25px;
+      border-top: 1px solid rgb(100, 100, 100);
+      margin: auto;
+      margin-right: 15px;
+    } 
+    &::after {
+      content: "";
+      flex: 1;
+      border-top: 1px solid rgb(100, 100, 100);
+      margin: auto;
+      margin-left: 15px;
+    }
+  }
+
+  div {
+    border-left:1px solid rgb(100, 100, 100);
+    border-right:1px solid rgb(100, 100, 100);
+    border-bottom:1px solid rgb(100, 100, 100);
+    margin:-10px auto;
+    padding:40px 20px 30px 20px;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  i {
+    padding: 10px 20px;
+  }
 }

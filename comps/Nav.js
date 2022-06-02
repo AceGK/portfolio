@@ -6,29 +6,32 @@ const Navbar = () => {
 
     const router = useRouter(); // using router to mimick react's NavLink ('active' class link state for styling) 
 
+    const activeLi = styles.activeLi;
+    const active = styles.active;
+
     return ( 
         <div className={styles.nav}>
             <ul>
-                <li>
+                <li className={router.pathname == "/about" ? activeLi : ""}>
                     <Link href="/about">
-                        <a className={router.pathname == "/about" ? "active" : ""}>
-                            <i className="icon-info_outline">Icon</i>
+                        <a className={router.pathname == "/about" ? active : ""}>
+                            <i className="icon-info_outline"></i>
                             <h3>About</h3>
                         </a>
                     </Link>
                 </li>
-                <li>
+                <li className={router.pathname == "/projects" ? activeLi : ""}>
                     <Link href="/projects">
-                        <a className={router.pathname == "/projects" ? "active" : ""}>
-                            <i className="icon-code2">Icon</i>
+                        <a className={router.pathname == "/projects" ? active : ""}>
+                            <i className="icon-code2"></i>
                             <h3>Projects</h3>
                         </a>
                     </Link>
                 </li>
-                <li>
+                <li className={router.pathname == "/contact" ? activeLi : ""}>
                     <Link href="/contact">
-                        <a className={router.pathname == "/contact" ? "active" : ""}>
-                            <i className="icon-mail_outline">Icon</i>
+                        <a className={router.pathname == "/contact" ? active : ""}>
+                            <i className="icon-mail_outline"></i>
                             <h3>Contact</h3>
                         </a>
                     </Link>

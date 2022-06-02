@@ -1,17 +1,30 @@
+
 .nav ul {
     display:grid;
     grid-template-columns:repeat(3, 1fr);
     justify-content:center;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
-    gap:10px;
+    gap:1rem;
+    // .activeLi:after {
+    //     content: "";
+    //     position: absolute;
+    //     height: 1px;
+    //     width: 200px;
+    //     border-bottom: 1px solid red!important;
+    //   }
+    .activeLi {
+        border-bottom: none;
+        background:var(--bkg1);
+      }
+    
     li {
         border: 1px solid var(--accent1);
     }
-    a { // active state styling is located in globals.scss
+    a {
         display:flex;
         flex-direction:column;
-        gap:5px;
+        gap:10px;
         text-decoration: none;
         padding:25px;
         opacity:.5;
@@ -23,4 +36,12 @@
         letter-spacing: 1px;
         font-size:1.2rem;
     }
+    i {
+        font-size:2rem;
+    }
+    .active {
+        opacity:1!important;
+        margin-bottom:1em;
+    }
 }
+
