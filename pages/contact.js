@@ -9,13 +9,13 @@ function Contact() {
             <label for="name" hidden>Name</label>
             <input type="text" name="name" placeholder="Name" required/>
 
-            <label for="email" hidden>Email</label>
+            <label htmlFor="email" hidden>Email</label>
             <input type="email" name="email" placeholder="Email" required/>
 
-            <label for="message" hidden>Message</label>
+            <label htmlFor="message" hidden>Message</label>
             <textarea name="message" placeholder="Message" required></textarea>
 
-            <div data-netlify-recaptcha="true"></div>
+            {/* <div data-netlify-recaptcha="true"></div> */}
             <br></br>
             <button type="submit" class="project-btn">Send</button>
         </form>
