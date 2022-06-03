@@ -4,12 +4,12 @@
 	gap:10px;
 	justify-content: center;
 	i {
-		color:#333;
-		font-size:3em;
+		color:var(--accent1);
+		font-size:2.5em;
 		margin:10px;
 		text-decoration: none;
 		&:hover {
-			color:rgb(245, 245, 245);
+			color:var(--text);
 		}
 	}
 	a {
