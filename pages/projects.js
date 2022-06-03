@@ -13,8 +13,8 @@ export default class ProjectData extends Component {
       title: 'This Site',
       logo:<AK style={{fill : 'white'}}/>,  
       icons: [
-        <i className="icon-react" title="React" key="2"></i>,
-        <i className="icon-node-dot-js" title="Node js" key="3"></i>,
+        <i className="icon-next-js" title="Next.js" key="2"></i>,
+        <i className="icon-node-dot-js" title="Node.js" key="3"></i>,
         <i className="icon-sass" title="CSS3" style={{color:"#CC6699"}} key="1"></i>,
         <i className="icon-vercel" title="Vercel" key="4"></i>,
       ], 
@@ -32,7 +32,7 @@ export default class ProjectData extends Component {
       icons:  [
         <i className="icon-html5" title="HTML5" key="1"></i>,
         <i className="icon-css3" title="CSS3" key="2"></i>,
-        <i className="icon-javascript" title="Javascript ES6" key="3"></i>,
+        <i className="icon-javascript" title="Javascript" key="3"></i>,
         <i className="icon-wordpress1" title="Wordpress" key="4"></i>,
         <i className="icon-php" title="php" key="4"></i>
       ],   

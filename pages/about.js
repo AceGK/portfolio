@@ -15,13 +15,13 @@ const About = () => {
               <i className="icon-html5" title="HTML5"></i>
               <i className="icon-css3" title="CSS3"></i>
               <i style={{color:"#CC6699"}} className="icon-sass" title="SCSS"></i> 
-              <i className="icon-javascript" title="Javascript ES6"></i>
+              <i className="icon-javascript" title="Javascript"></i>
               <i className="icon-typescript" title="Typescript"></i>
               <i className="icon-jquery" title="jQuery"></i>
               <i className="icon-react" title="React"></i>
               {/* <i className="icon-redux" title="Redux"></i> */}
-              <i className="icon-next-js" title="Next js"></i>
-              <i className="icon-node-dot-js" title="Node js"></i>
+              <i className="icon-next-js" title="Next.js"></i>
+              <i className="icon-node-dot-js" title="Node.js"></i>
               <i className="icon-php" title="PHP"></i>
               <i className="icon-mysql" title="MySQL"></i>
               <i className="icon-mongodb" title="MongoDB"></i>
