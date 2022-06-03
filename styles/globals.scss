@@ -132,6 +132,7 @@ a {
   &:hover, &:hover i {
     color: var(--bkg1);
     background:var(--text);
+    cursor:pointer;
   }
 }
 

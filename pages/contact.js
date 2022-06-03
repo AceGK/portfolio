@@ -1,4 +1,5 @@
 import React from "react";
+import styles from '../styles/Contact.module.scss'
 
 function Contact() {
   async function handleOnSubmit(e) {
@@ -19,15 +20,7 @@ function Contact() {
   
  
     <div id="contact" className="page-container">
-
-    <style jsx>{`
-        label{ 
-          display:block;
-        }
-        
-        `}
-    </style>
-        <form name="contact" method="POST" onSubmit={handleOnSubmit}>
+        <form name="contact" method="POST" onSubmit={handleOnSubmit} className={styles.contact}>
             <input type="hidden" name="form-name" value="contact" />
             <label htmlFor="name" hidden>Name</label>
             <input type="text" name="name" placeholder="Name" required/>
@@ -37,7 +30,7 @@ function Contact() {
 
             <label htmlFor="message" hidden>Message</label>
             <textarea name="message" placeholder="Message" required></textarea>
-            <button type="submit" className="projectBtn">Send</button>
+            <button type="submit" className="btn">Send</button>
         </form>
     </div>
 
