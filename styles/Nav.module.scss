@@ -1,3 +1,4 @@
+@import "styles/mixins";
 
 .nav ul {
 	display:grid;
@@ -6,6 +7,9 @@
 	align-items: flex-start;
 	text-align: center;
 	gap:1rem;
+	@include tablet() {
+		gap:.5rem;
+	}
 	.activeLi {
 		border-bottom: none;
 		background:var(--bkg1);
@@ -23,17 +27,30 @@
 		&:hover{
 				opacity:1; 
 		}
+		@include tablet() {
+		padding:3vw;
+		}
 	}
 	h3{
 		letter-spacing: 1px;
 		font-size:1.2rem;
+		@include tablet() {
+			font-size:3vw;
+		}
 	}
 	i {
 		font-size:2rem;
+		@include tablet() {
+			font-size:1.4rem;
+		}
 	}
 	.active {
 		opacity:1!important;
-		margin-bottom:1em;
+		margin-bottom:1rem;
+		@include tablet() {
+			margin-bottom:.5rem;
+		}
 	}
+	
 }
 

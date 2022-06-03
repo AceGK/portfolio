@@ -1,39 +1,38 @@
 .hero {
-    margin-bottom:25px;
-    div {
-        border-left:1px solid rgb(100, 100, 100);
-        border-right:1px solid rgb(100, 100, 100);
-        border-top:1px solid rgb(100, 100, 100);
+  margin-bottom: 30px;
+  div {
+    border-left: 1px solid rgb(100, 100, 100);
+    border-right: 1px solid rgb(100, 100, 100);
+    border-top: 1px solid rgb(100, 100, 100);
+  }
+  h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 25px 0px;
+    font-size: min(12vw, 6rem);
+  }
+  h2 {
+    display: flex;
+    margin: 0px;
+    margin: -9px 0px;
+    font-size: min(3vw, 1.2rem);
+    letter-spacing: 5px;
+    &::before {
+      content: "";
+      flex: 1 1;
+      border-top: 1px solid rgb(100, 100, 100);
+      margin: auto;
+      margin-right: 15px;
     }
-    h1 {
-        text-align:center;
-        margin:0px;
-        padding:25px 0px;    
-        font-size:min(12vw, 6rem);
+    &::after {
+      content: "";
+      flex: 1 1;
+      border-top: 1px solid rgb(100, 100, 100);
+      margin: auto;
+      margin-left: 15px;
     }
-    h2 {
-        display: flex;
-        margin:0px;
-        margin: -9px 0px;
-        font-size:min(3vw, 1.2rem);
-        letter-spacing: 5px; 
-        &::before {
-            content: "";
-            flex: 1 1;
-            border-top: 1px solid rgb(100, 100, 100);
-            margin: auto;
-            margin-right: 15px;
-        }  
-        &::after {
-            content: "";
-            flex: 1 1;
-            border-top: 1px solid rgb(100, 100, 100);
-            margin: auto;
-            margin-left: 15px;
-        }
-    }
-    &:hover {
-        cursor:pointer;
-    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }
-

@@ -36,7 +36,7 @@ export default class ProjectData extends Component {
         <i className="icon-wordpress1" title="Wordpress" key="4"></i>,
         <i className="icon-php" title="php" key="4"></i>
       ],   
-      description:'Website for a cannabis dispensary located in San Jose, CA. Currently being rebuilt with Next.js', 
+      description:'Ecommerce website for a cannabis dispensary located in San Jose, CA. Currently being rebuilt with Next.js', 
       buttons: [ 
         <a href="https://plpcsanjose.com" className="btn" target="_blank" rel="noreferrer" key="1">
             View Site
@@ -45,7 +45,7 @@ export default class ProjectData extends Component {
       id: 2
     },
     {
-      title: 'HAL 9000 Rainmeter', 
+      title: 'HAL Rainmeter', 
       logo:<Hal />,
       icons:  [
         <i className="icon-rainmeter2" title="Rainmeter" key="1"></i>,
@@ -64,7 +64,6 @@ export default class ProjectData extends Component {
   }
   render() {
     return (
-        
       <div className="page-container">
         <Projects projects={this.state.projects}/>
       </div>

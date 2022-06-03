@@ -3,7 +3,7 @@ const About = () => {
       <div className="page-container">
 
         <p>Hello!</p>
-        <p>My name is Ace and I live in San Jose, California. 
+        <p>My name is Ace and I live in San Jose, CA. 
           I am a full-stack software engineer
           with a primary focus on front-end web development. 
           Below is a list of technologies that I use frequently. 

@@ -1,11 +1,22 @@
-
+@import "styles/mixins";
 
 .project {
   border:1px solid var(--accent1);
   margin-bottom:20px;
+  @include tablet(){
+    margin-bottom:15px;
+  }
 }
+
+.list .project:last-child {
+  background:red!important;
+}
+
 .info {
   padding:5px 15px 15px 15px;
+  p {
+    margin-bottom:.5em;
+  }
 }
 i.projectThumb {
   font-size:4em;
@@ -18,23 +29,36 @@ i.projectThumb {
 
 .title {
   color:var(--text);
-  font-size: 1.2em;
-  padding-left:15px;
-  /* text-transform: uppercase; */
+  padding-left:1em;
+  font-size: 1rem;
   letter-spacing: -1px;
   text-align: center;
   line-height: 1.2em;
+  @include tablet(){
+    font-size:.8rem;
+  }
 }
 
 .summary {
-  padding:15px 15px;
+  padding:10px 15px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   &:hover {
     cursor: pointer;
     .arrow i {
       color:var(--text);
+    }
+  }
+  svg {
+    width:50px;
+    height:50px;
+    @include tablet(){
+      width:40px;
+      height:40px;
+    }
+    @include mobile(){
+      width:30px;
+      height:30px;
     }
   }
 }
@@ -48,14 +72,18 @@ i.projectThumb {
 }
 
 .icons {
+  display:flex;
+  gap:.2em;
   font-size:30px;
   max-width:400px;
   margin-right: auto;
   padding-bottom:15px;
   i {
-    padding:3px;
-    &:first-child {
-      padding-left:0px;
+    @include tablet(){
+      font-size:25px;
+    }
+    @include mobile(){
+      font-size:20px;
     }
   }
 }
@@ -64,5 +92,3 @@ i.projectThumb {
   display:flex;
   gap:10px;
 }
-
-
