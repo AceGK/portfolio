@@ -31,7 +31,7 @@ const Navbar = () => {
                 <li className={router.pathname == "/contact" ? activeLi : ""}>
                     <Link href="/contact">
                         <a className={router.pathname == "/contact" ? active : ""}>
-                            <i className="icon-mail_outline"></i>
+                            <i className="icon-mail"></i>
                             <h3>Contact</h3>
                         </a>
                     </Link>

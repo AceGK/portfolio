@@ -4,7 +4,7 @@ const About = () => {
 
         <p>Hello!</p>
         <p>My name is Ace and I live in San Jose, California. 
-          I am a full-stack developer
+          I am a full-stack software engineer
           with a primary focus on front-end web development. 
           Below is a list of technologies that I use frequently. 
         </p>
@@ -13,7 +13,7 @@ const About = () => {
           <h2>Dev</h2>
             <div>
               <i className="icon-html5" title="HTML5"></i>
-              <i className="icon-css31" title="CSS3"></i>
+              <i className="icon-css3" title="CSS3"></i>
               <i style={{color:"#CC6699"}} className="icon-sass" title="SCSS"></i> 
               <i className="icon-javascript" title="Javascript ES6"></i>
               <i className="icon-typescript" title="Typescript"></i>
