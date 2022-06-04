@@ -1,0 +1,13 @@
+.nav2 {
+	padding:.5em 0;
+	display:flex;
+	justify-content: flex-end;
+	i {
+		color:var(--accent1);
+		font-size:1.4rem;
+		&:hover {
+			color:var(--text);
+			cursor:pointer;
+		}
+	}
+}

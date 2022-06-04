@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Hero from './Hero';
 import Footer from "./Footer";
 import Nav from "./Nav";
+import Nav2 from './Nav2';
 
 
 
@@ -15,6 +16,7 @@ const Layout = ({ children }) => {
                 <link rel="icon" href="/favicon.ico" />
                 
             </Head>
+            <Nav2/>
             <Hero/>
             <Nav/>
             { children }
