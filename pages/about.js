@@ -21,7 +21,7 @@ const About = () => {
               <i className="icon-react" title="React"></i>
               {/* <i className="icon-redux" title="Redux"></i> */}
               <i className="icon-next-js" title="Next.js"></i>
-              <i className="icon-node-dot-js" title="Node.js"></i>
+              <i className="icon-node-js" title="Node.js"></i>
               <i className="icon-php" title="PHP"></i>
               <i className="icon-mysql" title="MySQL"></i>
               <i className="icon-mongodb" title="MongoDB"></i>
@@ -35,18 +35,19 @@ const About = () => {
                 <i className="icon-mongodb" title="MongoDB"></i>
                 <i className="icon-firebase" title="Firebase"></i>
                 <i className="icon-postgre" title="PostgreSQL"></i>
-                <i className="icon-auth0-shield" title="Auth0"></i>
+                <i className="icon-auth0" title="Auth0"></i>
               </div>
           </div> */}
 
           <div className="skillsBox">
             <h2>Design</h2>
               <div>
-                <i className="icon-adobephotoshop" title="Photoshop"></i>
-                <i className="icon-adobelightroomclassic" title="Lightroom"></i>
-                <i className="icon-adobeillustrator" title="Illustrator"></i>
-                <i className="icon-adobeindesign" title="InDesign"></i>
+                <i className="icon-photoshop" title="Photoshop"></i>
+                <i className="icon-lightroom" title="Lightroom"></i>
+                <i className="icon-illustrator" title="Illustrator"></i>
+                <i className="icon-xd" title="InDesign"></i>
                 <i className="icon-sketch" title="Sketch" style={{color:"#F7B500"}}></i>
+                <i className="icon-figma" title="Figma"></i>
               </div>
           </div>
 
@@ -56,7 +57,7 @@ const About = () => {
               <i className="icon-netlify" title="Netlify"></i>
               <i className="icon-vercel" title="Vercel" style={{color:'#fff'}}></i>
               <i className="icon-digitalocean" title="DigitalOcean"></i>
-              <i className="icon-amazonaws" title="AWS"></i>
+              <i className="icon-aws" title="AWS"></i>
               <i className="icon-heroku" title="Heroku"></i>
               <i className="icon-wpengine" title="WPEngine"></i>
                 

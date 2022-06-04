@@ -197,8 +197,5 @@ a {
       padding: 8px 16px;
       font-size: 40px;
     }
-    @include mobile() {
-      font-size: 35px;
-    }
   }
 }

@@ -14,7 +14,7 @@ export default class ProjectData extends Component {
       logo:<AK style={{fill : 'white'}}/>,  
       icons: [
         <i className="icon-next-js" title="Next.js" key="2"></i>,
-        <i className="icon-node-dot-js" title="Node.js" key="3"></i>,
+        <i className="icon-node-js" title="Node.js" key="3"></i>,
         <i className="icon-sass" title="CSS3" style={{color:"#CC6699"}} key="1"></i>,
         <i className="icon-vercel" title="Vercel" key="4"></i>,
       ], 
@@ -33,7 +33,7 @@ export default class ProjectData extends Component {
         <i className="icon-html5" title="HTML5" key="1"></i>,
         <i className="icon-css3" title="CSS3" key="2"></i>,
         <i className="icon-javascript" title="Javascript" key="3"></i>,
-        <i className="icon-wordpress1" title="Wordpress" key="4"></i>,
+        <i className="icon-wordpress" title="Wordpress" key="4"></i>,
         <i className="icon-php" title="php" key="4"></i>
       ],   
       description:'Ecommerce website for a cannabis dispensary located in San Jose, CA. Currently being rebuilt with Next.js', 
@@ -48,7 +48,7 @@ export default class ProjectData extends Component {
       title: 'HAL Rainmeter', 
       logo:<Hal />,
       icons:  [
-        <i className="icon-rainmeter2" title="Rainmeter" key="1"></i>,
+        <i className="icon-rainmeter" title="Rainmeter" key="1"></i>,
         <i className="icon-lua" title="LUA" key="2"></i>
       ],   
       description: 'Rainmeter skin modeled after HAL 9000 that monitors PC performance status and details', 
