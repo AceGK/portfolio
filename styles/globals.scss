@@ -148,12 +148,16 @@ a {
 }
 
 
+.about {
+  margin-bottom:15px;
+}
+
 // about page boxes
 .skillsBox {
   margin-bottom:15px;
 
   &:not(:last-child) {
-  margin:35px 0px 35px 0px;
+  margin-bottom:35px;
   }
 
   h2 {

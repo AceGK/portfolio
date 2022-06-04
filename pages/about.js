@@ -1,13 +1,14 @@
 const About = () => {
     return ( 
       <div className="page-container">
-
-        <p>Hello!</p>
-        <p>My name is Ace and I live in San Jose, CA. 
-          I am a full-stack software engineer
-          with a focus on front-end web development. 
-          Below is a list of technologies that I use frequently. 
-        </p>
+        <div className="about"> 
+          <p>Hello!</p>
+          <p>My name is Ace and I live in San Jose, CA. 
+            I am a full-stack software engineer
+            with a focus on front-end web development. 
+            Below is a list of technologies that I use frequently. 
+          </p>
+        </div>
         
         <div className="skillsBox">
           <h2>Dev</h2>
