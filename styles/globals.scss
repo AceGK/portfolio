@@ -177,6 +177,9 @@ a {
       margin: auto;
       margin-left: 15px;
     }
+    @include tablet(){
+      font-size:1rem;
+    }
   }
 
   div {
@@ -188,6 +191,9 @@ a {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    @include tablet(){
+      margin:-8px auto;
+    }
   }
 
   i {
