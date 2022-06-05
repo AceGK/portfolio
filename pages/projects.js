@@ -15,7 +15,7 @@ export default class ProjectData extends Component {
       icons: [
         <i className="icon-next-js" title="Next.js" key="2"></i>,
         <i className="icon-node-js" title="Node.js" key="3"></i>,
-        <i className="icon-sass" title="CSS3" style={{color:"#CC6699"}} key="1"></i>,
+        <i className="icon-sass" title="SCSS" style={{color:"#CC6699"}} key="1"></i>,
         <i className="icon-vercel" title="Vercel" key="4"></i>,
         <i className="icon-sendgrid-flat" title="Sendgrid" key="5"></i>,
         <i className="icon-icomoon" title="Icomoon" key="6"></i>
