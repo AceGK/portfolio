@@ -17,6 +17,8 @@ export default class ProjectData extends Component {
         <i className="icon-node-js" title="Node.js" key="3"></i>,
         <i className="icon-sass" title="CSS3" style={{color:"#CC6699"}} key="1"></i>,
         <i className="icon-vercel" title="Vercel" key="4"></i>,
+        <i className="icon-sendgrid-flat" title="Sendgrid" key="5"></i>,
+        <i className="icon-icomoon" title="Icomoon" key="6"></i>
       ], 
       description: 'My portfolio site, showcasing my work and personal projects', 
       buttons: [ 
@@ -34,7 +36,9 @@ export default class ProjectData extends Component {
         <i className="icon-css3" title="CSS3" key="2"></i>,
         <i className="icon-javascript" title="Javascript" key="3"></i>,
         <i className="icon-wordpress" title="Wordpress" key="4"></i>,
-        <i className="icon-php" title="php" key="4"></i>
+        <i className="icon-php" title="php" key="4"></i>,
+        <i className="icon-font-awesome-flat" title="Font Awesome" key="5"></i>,
+        <i className="icon-swiper-js-flat" title="Swiper.js" key="6"></i>,
       ],   
       description:'Ecommerce website for a cannabis dispensary located in San Jose, CA. Currently being rebuilt with Next.js', 
       buttons: [ 

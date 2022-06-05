@@ -69,12 +69,14 @@
 
 .icons {
   display:flex;
+  flex-wrap:wrap;
   gap:.2em;
-  font-size:30px;
+  font-size:25px;
   max-width:400px;
   margin-right: auto;
   padding-bottom:15px;
   i {
+    display:block;
     @include tablet(){
       font-size:25px;
     }
