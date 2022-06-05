@@ -12,6 +12,7 @@ const Nav2 = () => {
 
     return ( 
         <div className={styles.nav2}>
+            <p>click me</p>
             <i className="icon-terminal" title="CRT mode" onClick={()=> setCrt(!crt)}></i>
         </div>
      );
