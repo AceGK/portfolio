@@ -78,8 +78,7 @@ body {
   width:var(--siteW);
   max-width:90%;
   margin:0px auto;
-  // background-image: url("/svg/graph-paper.svg");
-  // background-repeat: repeat;
+  background-image: var(--bkgimg);
   background-color:var(--bkg1);
 }
 
@@ -129,7 +128,7 @@ a {
 }
 
 .btn {
-  background:var(--bkg1);
+  background:var(--bkg2);
   border:1px solid var(--accent1);
   color:var(--accent1);
   padding:10px 20px;
@@ -390,3 +389,10 @@ a {
     color:var(--text);
   }
 }
+
+// .crt {
+//   background-image: radial-gradient(
+//     rgba(44, 56, 44, 0.267), black 120%
+//   );
+
+// }

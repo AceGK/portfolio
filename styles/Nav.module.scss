@@ -13,6 +13,7 @@
 	.activeLi {
 		border-bottom: none;
 		background:var(--bkg1);
+		background-image: var(--bkgimg2);
 	}
 	//use psudeo element to hide page-container border (instead of using a background color)
 	// .activeLi:after { 
