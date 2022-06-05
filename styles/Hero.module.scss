@@ -3,9 +3,8 @@
 .hero {
   margin-bottom: 3.5%;
   div {
-    border-left: 1px solid rgb(100, 100, 100);
-    border-right: 1px solid rgb(100, 100, 100);
-    border-top: 1px solid rgb(100, 100, 100);
+    border: 1px solid var(--accent1);
+    border-bottom: none;
   }
   h1 {
     text-align: center;
@@ -25,14 +24,14 @@
     &::before {
       content: "";
       flex: 1 1;
-      border-top: 1px solid rgb(100, 100, 100);
+      border-top: 1px solid var(--accent1);
       margin: auto;
       margin-right: 15px;
     }
     &::after {
       content: "";
       flex: 1 1;
-      border-top: 1px solid rgb(100, 100, 100);
+      border-top: 1px solid var(--accent1);
       margin: auto;
       margin-left: 15px;
     }

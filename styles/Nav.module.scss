@@ -33,7 +33,7 @@
 		gap:10px;
 		text-decoration: none;
 		padding:1.5rem;
-		opacity:.5;
+		opacity:var(--opacity);
 		&:hover{
 			opacity:1; 
 		}
