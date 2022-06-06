@@ -44,7 +44,7 @@ export default class ProjectData extends Component {
       description:'Ecommerce website for a cannabis dispensary located in San Jose, CA. Currently being rebuilt with Next.js', 
       buttons: [ 
         <a href="https://plpcsanjose.com" className="btn" target="_blank" rel="noreferrer" key="1">
-            <i className="icon-github" title="Github"></i> View Site
+            <i className="icon-link" title="view site"></i> View
          </a>,
       ],
       id: 2
@@ -75,7 +75,7 @@ export default class ProjectData extends Component {
       description: 'A vanilla JS tip calculator that evaluates cost per person based on bill amount and tip %', 
       buttons: [ 
         <a href="https://acegk.github.io/tip-calculator/" className="btn" target="_blank" rel="noreferrer" key="1">
-          <i className="icon-link" title="Github"></i> View Site
+          <i className="icon-link" title="view site"></i> View
         </a>,
         <a href="https://github.com/AceGK/tip-calculator" className="btn" target="_blank" rel="noreferrer" key="2">
           <i className="icon-github" title="Github"></i> Github
