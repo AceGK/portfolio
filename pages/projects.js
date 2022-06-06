@@ -4,6 +4,7 @@ import Projects from '../comps/Project';
 import AK from '../public/svg/ak.svg';
 import PLPC from '../public/svg/plpc.svg';
 import Hal from '../public/svg/hal9000m.svg';
+import Tipper from '../public/svg/tipper.svg';
 
 
 export default class ProjectData extends Component {
@@ -22,7 +23,7 @@ export default class ProjectData extends Component {
       ], 
       description: 'My portfolio site, showcasing my work and personal projects', 
       buttons: [ 
-        <a href="https://github.com/AceGK/ace-react-site" className="btn" target="_blank" rel="noreferrer" key="1">
+        <a href="https://github.com/AceGK/portfolio" className="btn" target="_blank" rel="noreferrer" key="1">
             <i className="icon-github" title="Github"></i> Github
          </a>,
       ],
@@ -43,7 +44,7 @@ export default class ProjectData extends Component {
       description:'Ecommerce website for a cannabis dispensary located in San Jose, CA. Currently being rebuilt with Next.js', 
       buttons: [ 
         <a href="https://plpcsanjose.com" className="btn" target="_blank" rel="noreferrer" key="1">
-            View Site
+            <i className="icon-github" title="Github"></i> View Site
          </a>,
       ],
       id: 2
@@ -62,6 +63,25 @@ export default class ProjectData extends Component {
          </a>,
       ],
       id: 3 
+    },
+    {
+      title: 'Tip Calculator', 
+      logo:<Tipper style={{fill : 'white'}} />,
+      icons:  [
+        <i className="icon-html5" title="HTML5" key="1"></i>,
+        <i className="icon-css3" title="CSS3" key="2"></i>,
+        <i className="icon-javascript" title="Javascript" key="3"></i>,
+      ],   
+      description: 'A vanilla JS tip calculator that evaluates cost per person based on bill amount and tip %', 
+      buttons: [ 
+        <a href="https://acegk.github.io/tip-calculator/" className="btn" target="_blank" rel="noreferrer" key="1">
+          <i className="icon-link" title="Github"></i> View Site
+        </a>,
+        <a href="https://github.com/AceGK/tip-calculator" className="btn" target="_blank" rel="noreferrer" key="2">
+          <i className="icon-github" title="Github"></i> Github
+        </a>
+      ],
+      id: 4
     }
    
     ]
