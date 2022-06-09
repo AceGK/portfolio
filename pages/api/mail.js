@@ -14,7 +14,7 @@ export default (req, res) => {
 
     const data = {
         to: 'acekisch@gmail.com',
-        from: 'acekisch@gmail.com',
+        from: 'ace@acekisch.com',
         subject: 'New portfolio contact message',
         text: message, 
         html: message.replace(/\r\n/g, '<br>')
