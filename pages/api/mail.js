@@ -4,7 +4,6 @@ mail.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY);
 
 export default async (req, res) => {
     const body = JSON.parse(req.body);
-    console.log(body);
 
     const message = `
     Name: ${body.name}\r\n
@@ -12,14 +11,14 @@ export default async (req, res) => {
     Message: ${body.message}
     `;
 
-    const data = {
+    await mail.send({
         to: 'acekisch@gmail.com',
         from: 'ace@acekisch.com',
         subject: 'New portfolio contact message',
         text: message, 
         html: message.replace(/\r\n/g, '<br>')
-    };
+    });
 
-    mail.send(data)
     res.status(200).json({ status: 'Ok' })
+    
   }

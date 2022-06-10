@@ -3,33 +3,42 @@ import styles from '../styles/Contact.module.scss'
 
 function Contact() {
 
-  const [showMe, setShowMe] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
+  const [hide, setHide] = useState(false);
 
   async function handleOnSubmit(e) {
     e.preventDefault();
+
     const formData = {}
+
     Array.from(e.currentTarget.elements).forEach(field => {
       if ( !field.name ) return; 
       formData[field.name] = field.value;
     });
 
-    fetch('/api/mail', {
+    const res = await fetch('/api/mail', {
       method: 'post',
       body: JSON.stringify(formData)
     })
-    console.log(formData);
 
-    setShowMe(!showMe);
+    if (res.ok) {
+      setSuccess(!success);
+    } else {
+      setError(!error);
+    }
+
+    setHide(!hide);
   }
 
-  
-
   return (
-  
  
     <div id="contact" className="page-container" >
-      <div className={styles.success} style={{ display: showMe ? "block" : "none" }}>
-        Success
+      <div className={styles.success} style={{ display: success ? "block" : "none" }}>
+        <p>Thank you for getting in touch!</p>
+      </div>
+      <div className={styles.success} style={{ display: error ? "block" : "none" }}>
+        <p>Error! <br/>Please refresh and try again or contact me at <a href="mailto:acekisch@gmail.com">acekisch@gmail.com</a></p>
       </div>
 
         <form 
@@ -37,7 +46,7 @@ function Contact() {
           method="POST" 
           onSubmit={handleOnSubmit} 
           className={styles.contact} 
-          style={{ display: showMe ? "none" : "grid" }}
+          style={{ display: hide ? "none" : "grid" }}
         >
             <input type="hidden" name="form-name" value="contact" />
             <label htmlFor="name" hidden>Name</label>
