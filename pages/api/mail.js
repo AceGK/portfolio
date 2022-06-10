@@ -6,9 +6,9 @@ export default async (req, res) => {
     const body = JSON.parse(req.body);
 
     const message = `
-    Name: ${body.name}\r\n
-    Email: ${body.email}\r\n
-    Message: ${body.message}
+    Name: ${body.nameTrue}\r\n
+    Email: ${body.emailTrue}\r\n
+    Message: ${body.messageTrue}
     `;
 
     await mail.send({
