@@ -80,6 +80,8 @@ body {
   margin:0px auto;
   background-image: var(--bkgimg);
   background-color:var(--bkg1);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 * {
