@@ -82,6 +82,7 @@ body {
   background-color:var(--bkg1);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-overflow-scrolling: auto;
 }
 
 * {
