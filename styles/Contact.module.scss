@@ -10,6 +10,7 @@
 			color:var(--text);
 			-webkit-border-radius:0; 
     	border-radius:0;
+			font-size: 16px;
 		}
 		textarea {
 			resize: vertical;
@@ -22,6 +23,7 @@
 			transition: background-color 5000s ease-in-out 0s;
 			-webkit-text-fill-color: var(--text) ;
 			font-family:var(--body-font)!important;
+			// font-size:16px;
 		}
 		input::placeholder,
 		textarea::placeholder {
