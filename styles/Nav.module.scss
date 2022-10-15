@@ -57,9 +57,9 @@
 	}
 	.active {
 		opacity:1!important;
-		margin-bottom:.9rem;
+		margin-bottom:1rem;
 		@include tablet() {
-			margin-bottom:.6rem;
+			margin-bottom:.7rem;
 		}
 	}
 	
