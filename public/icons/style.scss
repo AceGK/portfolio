@@ -13,7 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
+  // speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -122,6 +122,7 @@
 }
 .icon-sketch:before {
   content: "\e920";
+  color:#FFC930;
 }
 .icon-aws:before {
   content: "\e928";
@@ -188,6 +189,7 @@
 }
 .icon-sass:before {
   content: "\e962";
+  color:#C36090;
 }
 .icon-html5:before {
   content: "\e91c";

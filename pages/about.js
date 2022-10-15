@@ -1,4 +1,7 @@
-const About = () => {
+import React, { useState } from 'react'
+
+export default function About() {
+  
     return ( 
       <div className="page-container">
         <div className="about"> 
@@ -13,19 +16,19 @@ const About = () => {
         <div className="skillsBox">
           <h2>Dev</h2>
             <div>
-              <i className="icon-html5" title="HTML5"></i>
-              <i className="icon-css3" title="CSS3"></i>
-              <i style={{color:"#CC6699"}} className="icon-sass" title="SCSS"></i> 
-              <i className="icon-javascript" title="Javascript"></i>
-              <i className="icon-typescript" title="Typescript"></i>
-              <i className="icon-jquery" title="jQuery"></i>
-              <i className="icon-react" title="React"></i>
-              {/* <i className="icon-redux" title="Redux"></i> */}
-              <i className="icon-next-js" title="Next.js"></i>
-              <i className="icon-node-js" title="Node.js"></i>
-              <i className="icon-php" title="PHP"></i>
-              <i className="icon-mysql" title="MySQL"></i>
-              <i className="icon-mongodb" title="MongoDB"></i>
+              <Icon className="icon-html5" title="HTML5" />
+              <Icon className="icon-css3" title="CSS3" />
+              <Icon style={{color:"#CC6699"}} className="icon-sass" title="SCSS" /> 
+              <Icon className="icon-javascript" title="Javascript" />
+              <Icon className="icon-typescript" title="Typescript" />
+              <Icon className="icon-jquery" title="jQuery" />
+              <Icon className="icon-react" title="React" />
+              {/* <Icon className="icon-redux" title="Redux" /> */}
+              <Icon className="icon-next-js" title="Next.js" />
+              <Icon className="icon-node-js" title="Node.js" />
+              <Icon className="icon-php" title="PHP" />
+              <Icon className="icon-mysql" title="MySQL" />
+              <Icon className="icon-mongodb" title="MongoDB" />
             </div>
           </div>
 
@@ -43,24 +46,24 @@ const About = () => {
           <div className="skillsBox">
             <h2>Design</h2>
               <div>
-                <i className="icon-photoshop" title="Photoshop"></i>
-                <i className="icon-lightroom" title="Lightroom"></i>
-                <i className="icon-illustrator" title="Illustrator"></i>
-                <i className="icon-xd" title="InDesign"></i>
-                <i className="icon-sketch" title="Sketch" style={{color:"#F7B500"}}></i>
-                <i className="icon-figma" title="Figma"></i>
+                <Icon className="icon-photoshop" title="Photoshop" />
+                <Icon className="icon-lightroom" title="Lightroom" />
+                <Icon className="icon-illustrator" title="Illustrator" />
+                <Icon className="icon-xd" title="Experience Design" />
+                <Icon className="icon-sketch" title="Sketch" style={{color:"#F7B500"}} />
+                <Icon className="icon-figma" title="Figma" />
               </div>
           </div>
 
           <div className="skillsBox">
             <h2>Deploy</h2>
               <div>
-              <i className="icon-netlify" title="Netlify"></i>
-              <i className="icon-vercel" title="Vercel" style={{color:'#fff'}}></i>
-              <i className="icon-digitalocean" title="DigitalOcean"></i>
-              <i className="icon-aws" title="AWS"></i>
-              <i className="icon-heroku" title="Heroku"></i>
-              <i className="icon-wpengine" title="WPEngine"></i>
+              <Icon className="icon-netlify" title="Netlify" />
+              <Icon className="icon-vercel" title="Vercel" style={{color:'#fff'}} />
+              <Icon className="icon-digitalocean" title="DigitalOcean" />
+              <Icon className="icon-aws" title="AWS" />
+              <Icon className="icon-heroku" title="Heroku" />
+              <Icon className="icon-wpengine" title="WPEngine" />
                 
               </div>
           </div>
@@ -68,4 +71,22 @@ const About = () => {
      );
 }
  
-export default About;
+
+function Icon(props){
+
+  const [iconText, setIconText] = useState(false);
+
+  return(
+    <div className="icon-wrapper">
+      <i 
+        className={`${props.className} icon ${iconText ? `icon-active` : null}`}
+        title={props.title} 
+        onClick={() => setIconText(!iconText)}
+        onMouseEnter={() => setIconText(true)}
+        onMouseLeave={() => setIconText(false)}
+      >
+      </i>
+      <span className={`icon_text ${iconText ? `icon_text--active` : null}`}>{props.title}</span>
+    </div>
+  )
+}

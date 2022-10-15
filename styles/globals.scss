@@ -188,7 +188,7 @@ a {
     }
   }
 
-  div {
+  > div {
     border:1px solid var(--accent1);
     border-top:none;
     margin:-.65rem auto;
@@ -203,14 +203,44 @@ a {
 
   i {
     font-size: 50px;
-    padding: 10px 20px;
+    padding: 0px 20px;
     @include tablet() {
-      padding: 8px 16px;
+      // padding: 8px 16px;
       font-size: 40px;
     }
   }
 }
 
+
+// homepage icons
+
+.icon-wrapper {
+  position:relative;
+  padding: 10px 0px;
+}
+.icon {
+  opacity: 1;
+  transition:opacity .7s;
+}
+.icon-active {
+  opacity: 0.1;
+  transition:opacity 0.3s;
+}
+.icon_text {
+  font-family:var(--body-font);
+  pointer-events: none;
+  text-align: center;
+  position:absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  opacity:0;
+  transition:transform .7s;
+  &--active {
+    opacity:1;
+    transition:opacity .3s;
+  }
+}
 
 
 //crt flicker effects 
