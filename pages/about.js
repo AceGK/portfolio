@@ -81,7 +81,7 @@ function Icon(props){
       <i 
         className={`${props.className} icon ${iconText ? `icon-active` : null}`}
         title={props.title} 
-        onClick={() => setIconText(!iconText)}
+        // onClick={() => setIconText(!iconText)}
         onMouseEnter={() => setIconText(true)}
         onMouseLeave={() => setIconText(false)}
       >
