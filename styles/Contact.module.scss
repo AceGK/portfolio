@@ -8,6 +8,8 @@
 			border:1px solid var(--accent1);
 			padding:1em;
 			color:var(--text);
+			-webkit-border-radius:0; 
+    	border-radius:0;
 		}
 		textarea {
 			resize: vertical;
