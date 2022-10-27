@@ -4,48 +4,19 @@ import { useRouter } from 'next/router';
 
 export default function Navbar() {
 
-  const router = useRouter(); // using router to mimick react's NavLink ('active' class link state for styling) 
-
-  const activeLi = styles.activeLi;
-  const active = styles.active;
-
   return (
     <div className={styles.nav}>
       <ul>
-        <li className={router.pathname == "/about" ? activeLi : ""}>
-          <Link
-            href="/about"
-            className={router.pathname == "/about" ? active : ""}
-          >
-            <i className="icon-info_outline"></i>
-            <h3>About</h3>
-          </Link>
-        </li>
-
-        <li className={router.pathname == "/projects" ? activeLi : ""}>
-          <Link 
-            href="/projects"
-            className={router.pathname == "/projects" ? active : ""}
-          >
-              <i className="icon-code2"></i>
-              <h3>Projects</h3>
-          </Link>
-        </li>
-        <li className={router.pathname == "/contact" ? activeLi : ""}>
-          <Link 
-            href="/contact"
-            className={router.pathname == "/contact" ? active : ""}>
-
-              <i className="icon-mail"></i>
-              <h3>Contact</h3>
-          </Link>
-        </li>
+        <NavItem href="/about" icon="icon-info_outline" title="about"/>
+        <NavItem href="/projects" icon="icon-code2" title="projects"/>
+        <NavItem href="/contact" icon="icon-mail" title="contact"/>
       </ul>
     </div>
   );
 }
 
-function NavItem() {
+function NavItem(props) {
+  
   const router = useRouter(); // using router to mimick react's NavLink ('active' class link state for styling) 
 
   const activeLi = styles.activeLi;
