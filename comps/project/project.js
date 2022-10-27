@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Toggle from "../comps/Toggle";
-import styles from "../styles/Project.module.scss"
+import Toggle from "../Toggle";
+import styles from "./project.module.scss"
 
 export default class Projects extends Component {
 	render() {

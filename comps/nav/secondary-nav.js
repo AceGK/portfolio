@@ -1,7 +1,7 @@
-import styles from '../styles/Nav2.module.scss'
+import styles from './secondary-nav.module.scss'
 import {useEffect, useState} from 'react'
 
-const Nav2 = () => {
+const SecondaryNav = () => {
 
     //set crt theme
     const [crt, setCrt] = useState(false)
@@ -18,4 +18,4 @@ const Nav2 = () => {
      );
 }
  
-export default Nav2;
+export default SecondaryNav;

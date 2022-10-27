@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Projects from '../comps/Project';
+import Projects from '../comps/project/project';
 
 import AK from '../public/svg/ak.svg';
 import PLPC from '../public/svg/plpc.svg';
@@ -38,7 +38,7 @@ export default class ProjectData extends Component {
         <i className="icon-css3" title="CSS3" key="2"></i>,
         <i className="icon-javascript" title="Javascript" key="3"></i>,
         <i className="icon-wordpress" title="Wordpress" key="4"></i>,
-        <i className="icon-php" title="php" key="4"></i>,
+        <i className="icon-php" title="php" key="5"></i>,
       ],   
       description:'Ecommerce website for a cannabis dispensary located in San Jose, CA. Currently being rebuilt with Next.js', 
       buttons: [ 
