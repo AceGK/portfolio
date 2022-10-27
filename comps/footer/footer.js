@@ -5,10 +5,10 @@ const Footer = () => {
 	return ( 
 		<div className={styles.footer}>
 			<Link href="https://github.com/AceGK">
-				<a><i className="icon-github" title="Github"></i></a>
+				<i className="icon-github" title="Github"></i>
 			</Link>
 			<Link href="https://www.linkedin.com/in/acekisch/">
-				<a><i className="icon-linkedin" title="Linkedin"></i></a>
+				<i className="icon-linkedin" title="Linkedin"></i>
 			</Link>
 		</div>
 	);

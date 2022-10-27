@@ -11,7 +11,7 @@ const SecondaryNav = () => {
 
 
     return ( 
-        <div className={styles.nav2}>
+        <div className={styles.secondary_nav}>
             <p>click me</p>
             <i className="icon-terminal" title="CRT mode" onClick={()=> setCrt(!crt)}></i>
         </div>
