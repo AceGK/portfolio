@@ -7,8 +7,8 @@ export default function Navbar() {
   return (
     <div className={styles.nav}>
       <ul>
-        <NavItem href="/about" icon="icon-info_outline" title="about"/>
-        <NavItem href="/projects" icon="icon-code2" title="projects"/>
+        <NavItem href="/about" icon="icon-info" title="about"/>
+        <NavItem href="/projects" icon="icon-code-close" title="projects"/>
         <NavItem href="/contact" icon="icon-mail" title="contact"/>
       </ul>
     </div>

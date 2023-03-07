@@ -3,15 +3,25 @@
 	--header-font: 'United';
 	--subtitle-font: 'Orbitron';
 	--body-font: 'Source';
-	--text: hsl(0, 0%, 90%);
+	
+	--text: hsl(0, 0%, 95%);
 	--accent1: hsl(0, 0%, 40%);
 	--bkg1: hsl(0, 0%, 8%);
 	--bkg2: hsl(0, 0%, 8%);
 	--bkgimg: none;
-	--opacity: .5;
+	--opacity: .6;
+	--svg-fill: 
 }
 
-.crt {
+[data-theme='light'] {
+	--text: hsl(0, 0%, 16%);
+	--accent1: hsl(0, 0%, 25%);
+	--bkg1: hsl(0, 0%, 96%);
+	--bkg2: transparent;
+	--opacity: 1;
+}
+
+[data-theme='crt'] {
 	--text: #4af526;
 	--accent1: #4af526;
 	--bkg1: hsl(0, 0%, 0%);

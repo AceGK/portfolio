@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Projects from '../comps/project/project';
+import Projects from '../components/project';
 import Link from 'next/link'
 
-import AK from '../public/svg/ak.svg';
-import PLPC from '../public/svg/plpc.svg';
-import Hal from '../public/svg/hal9000m.svg';
-import Tipper from '../public/svg/tipper.svg';
-import IP from '../public/svg/ip-tracker.svg';
+import AK from '../../public/svg/ak.svg';
+import PLPC from '../../public/svg/plpc.svg';
+import Hal from '../../public/svg/hal9000m.svg';
+import Tipper from '../../public/svg/tipper.svg';
+import IP from '../../public/svg/ip-tracker.svg';
 
 
 export default class ProjectData extends Component {
@@ -91,7 +91,7 @@ export default class ProjectData extends Component {
         id: 4
       },
       {
-        title: 'HAL Rainmeter',
+        title: 'HAL PC monitor',
         logo: <Hal />,
         icons: [
           <i className="icon-rainmeter" title="Rainmeter" key="1"></i>,

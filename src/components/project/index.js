@@ -19,7 +19,7 @@ export default class Projects extends Component {
 										</h4>
 									</div>
 									<div className={styles.arrow}>
-										<i className={on ? "icon-keyboard_arrow_up" : "icon-keyboard_arrow_down"}></i>
+										<i className={on ? "icon-arrow-up" : "icon-arrow-down"}></i>
 									</div>
 								</div>
 							</div>

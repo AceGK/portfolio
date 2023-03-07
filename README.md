@@ -1,4 +1,4 @@
 # todo: 
 
-- fix webfont loading
+- upgrade to next/font
 - add more projects :')

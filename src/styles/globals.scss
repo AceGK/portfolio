@@ -64,6 +64,7 @@ table {
 //#region Globals
 
 body {
+  background-color: red;
   width: var(--siteW);
   max-width: 90%;
   margin: 0px auto;
@@ -72,6 +73,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-overflow-scrolling: auto;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
 }
 
 * {
@@ -296,7 +299,8 @@ a {
       -2.6208764473832513px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
   }
 }
-.crt::after {
+
+[data-theme='crt']::after {
   content: " ";
   display: block;
   position: fixed;
@@ -311,7 +315,7 @@ a {
   animation: flicker 0.15s infinite;
   height: 100vh;
 }
-.crt::before {
+[data-theme='crt']::before {
   content: "";
   height: 100vh;
   background-attachment: fixed;
@@ -333,18 +337,18 @@ a {
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
 }
-.crt {
+[data-theme='crt'] {
   animation: textShadow 15s infinite;
 }
 
-.crt i:before {
+[data-theme='crt'] i:before {
   color: var(--text);
 }
-.crt .btn i:before {
+[data-theme='crt'] .btn i:before {
   color: unset;
 }
 
-.crt svg {
+[data-theme='crt'] svg {
   fill: var(--text);
   color: var(--text);
   path {
@@ -353,11 +357,36 @@ a {
   }
 }
 
-// .crt {
+// [data-theme='crt'] {
 //   background-image: radial-gradient(
 //     rgba(44, 56, 44, 0.267), black 120%
 //   );
 
 // }
 
+//#endregion
+
+//#region Light mode 
+[data-theme='light'] svg {
+  fill: var(--text);
+  color: var(--text);
+  path {
+    fill: var(--text) !important;
+    color: var(--text);
+  }
+}
+//#endregion
+
+//#region scrollbar 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-primary-600);
+}
 //#endregion

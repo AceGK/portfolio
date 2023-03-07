@@ -1,4 +1,4 @@
-@import "styles/mixins";
+@import "../../styles/mixins";
 
 .about {
   margin-bottom:15px;
@@ -39,13 +39,15 @@
   }
 
   > div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    // display:grid;
+    // grid-template-columns: repeat(5, 1fr);
     border:1px solid var(--accent1);
     border-top:none;
     margin:-.65rem auto;
     padding:40px 20px 30px 20px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     @include tablet(){
       margin:-.5rem auto;
     }

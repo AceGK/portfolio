@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ot2k8w');
-  src:  url('fonts/icomoon.eot?ot2k8w#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ot2k8w') format('truetype'),
-    url('fonts/icomoon.woff?ot2k8w') format('woff'),
-    url('fonts/icomoon.svg?ot2k8w#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?v61b8f');
+  src:  url('fonts/icomoon.eot?v61b8f#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?v61b8f') format('truetype'),
+    url('fonts/icomoon.woff?v61b8f') format('woff'),
+    url('fonts/icomoon.svg?v61b8f#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  // speak: never;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -25,36 +25,43 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-tipper-logo:before {
+.icon-creative-cloud:before {
+  content: "\e908";
+  color: #da1f26;
+}
+.icon-sanity:before {
+  content: "\e906";
+  color: #f03e2f;
+}
+.icon-algolia:before {
+  content: "\e90e";
+  color: #003dff;
+}
+.icon-tipper:before {
   content: "\e905";
 }
-.icon-swiper-js-flat:before {
+.icon-swiper:before {
   content: "\e904";
   color: #6332f6;
 }
-.icon-font-awesome-flat:before {
+.icon-font-awesome:before {
   content: "\e901";
   color: #538dd7;
 }
 .icon-icomoon:before {
   content: "\e902";
 }
-.icon-sendgrid-flat:before {
+.icon-sendgrid:before {
   content: "\e903";
   color: #1a82e2;
+}
+.icon-indesign:before {
+  content: "\e90b";
+  color: #fd3f93;
 }
 .icon-xd:before {
   content: "\e900";
   color: #ff2bc2;
-}
-.icon-bars:before {
-  content: "\e91f";
-}
-.icon-navicon:before {
-  content: "\e91f";
-}
-.icon-reorder:before {
-  content: "\e91f";
 }
 .icon-postgre:before {
   content: "\e9c0";
@@ -105,7 +112,7 @@
   content: "\e9b0";
   color: #00c7b6;
 }
-.icon-auth0-shield:before {
+.icon-auth0:before {
   content: "\e9af";
   color: #eb5424;
 }
@@ -122,7 +129,7 @@
 }
 .icon-sketch:before {
   content: "\e920";
-  color:#FFC930;
+  color: #f7b500;
 }
 .icon-aws:before {
   content: "\e928";
@@ -139,7 +146,7 @@
   content: "\e93f";
   color: #0769ad;
 }
-.icon-npm1:before {
+.icon-npm:before {
   content: "\e943";
   color: #cb3837;
 }
@@ -189,16 +196,13 @@
 }
 .icon-sass:before {
   content: "\e962";
-  color:#C36090;
+  color: #c69;
 }
 .icon-html5:before {
   content: "\e91c";
   color: #e34f26;
 }
-.icon-adjust-brightness:before {
-  content: "\e9a6";
-}
-.icon-code:before {
+.icon-code-open:before {
   content: "\e993";
 }
 .icon-new:before {
@@ -207,24 +211,24 @@
 .icon-mail:before {
   content: "\e968";
 }
-.icon-keyboard_arrow_down:before {
+.icon-arrow-down:before {
   content: "\e9a9";
 }
-.icon-keyboard_arrow_left:before {
+.icon-arrow-left:before {
   content: "\e9aa";
 }
-.icon-keyboard_arrow_right:before {
+.icon-arrow-right:before {
   content: "\e9ab";
 }
-.icon-keyboard_arrow_up:before {
+.icon-arrow-up:before {
   content: "\e9ac";
 }
-.icon-wb_sunny:before {
+.icon-sun:before {
   content: "\e971";
 }
-.icon-info_outline:before {
+.icon-info:before {
   content: "\e978";
 }
-.icon-code2:before {
+.icon-code-close:before {
   content: "\e99c";
 }
