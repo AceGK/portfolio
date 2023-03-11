@@ -26,7 +26,7 @@ export default function Bio() {
       </p>
       <div className={styles.button} onClick={() => { setModal(!modal) }}>
         <a>More about me</a>
-        <i className="icon-arrow-right"></i>
+        <i className="icon-modal"></i>
       </div>
 
       {modal &&

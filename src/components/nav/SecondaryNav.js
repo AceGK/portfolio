@@ -17,13 +17,13 @@ function usePrevious(value) {
   return ref.current;
 }
 
-  // useEffect(() => {
-  //   setMounted(true)
-  // }, [])
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
-  // if (!mounted) {
-  //   return null
-  // }
+  if (!mounted) {
+    return null
+  }
 
   return (
     <div className={styles.secondary_nav}>
