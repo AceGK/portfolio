@@ -1,5 +1,5 @@
 import { SkillsBox, Icon } from '../components/skills'
-import Bio from '../components/Bio'
+import Bio from '../components/bio'
 
 export default function About() {
 
