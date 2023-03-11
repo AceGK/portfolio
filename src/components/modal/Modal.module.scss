@@ -24,18 +24,9 @@
   overflow-y: scroll;
   z-index: 1;
 
-  @include tablet(){
+  @include tablet() {
     max-width: 90%;
     max-height: 90%;
-  }
-  &::-webkit-scrollbar {
-    width: 10px;
-  }
-  &::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--accent1);
   }
 }
 
@@ -83,11 +74,7 @@
     top: 0px;
   }
   &::after {
-    background: linear-gradient(
-      0deg,
-      var(--bkg1) 0%,
-      rgba(20, 20, 20, 0) 100%
-    );
+    background: linear-gradient(0deg, var(--bkg1) 0%, rgba(20, 20, 20, 0) 100%);
     height: var(--height);
     margin-bottom: calc(var(--height) * -1);
     bottom: 0px;
