@@ -98,7 +98,7 @@ h4 {
 
 p {
   font-size: 1rem;
-  padding-bottom: 1em;
+  padding-bottom: 1.4em;
   line-height: 1.4rem;
   font-family: var(--body-font);
   @include tablet() {
@@ -109,6 +109,14 @@ p {
 a {
   font-family: var(--body-font);
   text-decoration: none;
+}
+
+p > a {
+  text-decoration: underline;
+  &:hover {
+    cursor:pointer;
+    color:var(--accent1)
+  }
 }
 
 .page-container {
@@ -392,6 +400,6 @@ body::-webkit-scrollbar-track {
 }
  
 body::-webkit-scrollbar-thumb {
-  background-color: var(--clr-primary-600);
+  background-color: var(--accent1);
 }
 //#endregion

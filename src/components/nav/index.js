@@ -21,11 +21,12 @@ function NavItem(props) {
 
   const activeLi = styles.activeLi;
   const active = styles.active;
+  console.log(router)
 
   return (
     <li className={router.pathname == props.href ? activeLi : ""}>
       <Link
-        href={props.href}
+        href={router.pathname == props.href ? '/' : props.href}
         className={router.pathname == props.href ? active : ""}
       >
         <i className={props.icon}></i>

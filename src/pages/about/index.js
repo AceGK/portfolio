@@ -1,7 +1,18 @@
-import React, { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styles from './about.module.scss'
+import Link from 'next/link'
 
 export default function About() {
+
+  const [aboutModal, setAboutModal] = useState(false)
+
+  useEffect(() => {
+    if (aboutModal) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [aboutModal]);
 
   return (
     <div className="page-container">
@@ -12,27 +23,32 @@ export default function About() {
           with a focus on front-end web development.
           Below is a list of technologies that I use frequently.
         </p>
+        <div className={styles.button} onClick={() => { setAboutModal(!aboutModal) }}>
+          <a>More about me</a>
+          <i className="icon-arrow-right"></i>
+        </div>
+        <AboutModal aboutModal={aboutModal} setAboutModal={setAboutModal} />
       </div>
 
       <SkillsBox title="Dev">
-          <Icon className="icon-html5" name="HTML5" />
-          <Icon className="icon-css3" name="CSS3" />
-          <Icon className="icon-sass" name="SASS" />
-          <Icon className="icon-javascript" name="Javascript" />
-          {/* <Icon className="icon-typescript" name="Typescript" /> */}
-          <Icon className="icon-react" name="React" />
-          {/* <Icon className="icon-redux" name="Redux" /> */}
-          <Icon className="icon-next-js" name="Next.js" />
-          {/* <Icon className="icon-npm" name="npm" /> */}
-          <Icon className="icon-node-js" name="Node.js" />
-          {/* <Icon className="icon-php" name="PHP" /> */}
-          {/* <Icon className="icon-mysql" name="MySQL" /> */}
-          <Icon className="icon-mongodb" name="MongoDB" />
-          <Icon className="icon-firebase" name="Firebase" />
-          {/* <Icon className="icon-postgre" name="PostgreSQL" /> */}
-          <Icon className="icon-auth0" name="Auth0" />
-          <Icon className="icon-algolia" name="Algolia" />
-          <Icon className="icon-sanity" name="Sanity" />
+        <Icon className="icon-html5" name="HTML5" />
+        <Icon className="icon-css3" name="CSS3" />
+        <Icon className="icon-sass" name="SASS" />
+        <Icon className="icon-javascript" name="Javascript" />
+        {/* <Icon className="icon-typescript" name="Typescript" /> */}
+        <Icon className="icon-react" name="React" />
+        {/* <Icon className="icon-redux" name="Redux" /> */}
+        <Icon className="icon-next-js" name="Next.js" />
+        {/* <Icon className="icon-npm" name="npm" /> */}
+        <Icon className="icon-node-js" name="Node.js" />
+        {/* <Icon className="icon-php" name="PHP" /> */}
+        {/* <Icon className="icon-mysql" name="MySQL" /> */}
+        <Icon className="icon-mongodb" name="MongoDB" />
+        <Icon className="icon-firebase" name="Firebase" />
+        {/* <Icon className="icon-postgre" name="PostgreSQL" /> */}
+        <Icon className="icon-auth0" name="Auth0" />
+        <Icon className="icon-algolia" name="Algolia" />
+        <Icon className="icon-sanity" name="Sanity" />
       </SkillsBox>
 
       <SkillsBox title="Deploy">
@@ -45,14 +61,14 @@ export default function About() {
       </SkillsBox>
 
       <SkillsBox title="Design">
-          <Icon className="icon-sketch" name="Sketch" />
-          <Icon className="icon-figma" name="Figma" />
-          <Icon className="icon-xd" name="Experience Design" />
-          <Icon className="icon-photoshop" name="Photoshop" />
-          <Icon className="icon-illustrator" name="Illustrator" />
-          <Icon className="icon-indesign" name="Indesign" />
+        <Icon className="icon-sketch" name="Sketch" />
+        <Icon className="icon-figma" name="Figma" />
+        <Icon className="icon-xd" name="Experience Design" />
+        <Icon className="icon-photoshop" name="Photoshop" />
+        <Icon className="icon-illustrator" name="Illustrator" />
+        <Icon className="icon-indesign" name="Indesign" />
       </SkillsBox>
-      
+
     </div>
   );
 }
@@ -83,6 +99,44 @@ function Icon(props) {
       >
       </i>
       <span className={`${styles.icon_text} ${iconText ? styles.icon_text__active : null}`}>{props.name}</span>
+    </div>
+  )
+}
+
+function AboutModal(props) {
+  console.log(props.aboutModal)
+  if (props.aboutModal === true) {
+    return (
+      <>
+        <Backdrop setAboutModal={props.setAboutModal} />
+        <div className={styles.aboutModal}>
+          <div className={styles.aboutModal__close}>
+            <span className="icon-xmark" onClick={() => { props.setAboutModal(false) }}></span>
+          </div>
+          <div className={styles.aboutModal__content}>
+            <h1>About Me</h1>
+
+            <p>I was born in 1991 and raised in Dutchess County, NY, where I developed a passion for art, music, and technology. In the early 2000s I began to learn about assembling custom computers, graphic design, photography, animation, and coding.</p>
+
+            <p>After graduating from <Link href="https://www.wikiwand.com/en/Salisbury_School" target="_blank">Salisbury School</Link> in 2009, I went on to study photography at the <Link href="https://www.wikiwand.com/en/The_Art_Institute_of_Boston" target="_blank">Art Institute of Boston</Link>. I then transferred to the <Link href="https://www.wikiwand.com/en/San_Francisco_Art_Institute" target="_blank">San Francisco Art Institute</Link> in 2011. While attending college I discovered my love for web development while building and maintaining my art portfolio website.</p>
+
+            <p>In 2014, I landed a job as an IT manager & software developer at <Link href="https://www.wikiwand.com/en/Oaksterdam_University" target="_blank">Oaksterdam University</Link>. During this time, I delved deeper into programming and began to build web applications professionally for my employer and other SF Bay Area businesses.</p>
+
+            <p>In 2019, I attended a full-stack webdev course at <Link href="https://www.wikiwand.com/en/UC_Berkeley_Extension" target="_blank">UC Berkeley Extension</Link> to further my education and solidify my expertise. Today, I am a skilled and accomplished software engineer and I am always looking for new ways to improve, innovate, and create.</p>
+
+          </div>
+        </div>
+      </>
+    )
+  }
+}
+
+function Backdrop({ setAboutModal }) {
+  return (
+    <div
+      className={styles.backdrop}
+      onClick={() => setAboutModal(false)}
+    >
     </div>
   )
 }
