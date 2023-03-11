@@ -1,7 +1,7 @@
 @import "../../styles/mixins";
 
 .hero {
-  margin-bottom: 3.5%;
+  margin-bottom: clamp(1em, 3.5%, 3.5%);
   div {
     border: 1px solid var(--accent1);
     border-bottom: none;
@@ -16,7 +16,6 @@
     display: flex;
     margin: 0px;
     margin-top: -0.6rem;
-    // font-size: min(3vw, 1.2rem);
     font-size:clamp(10px, 3vw, 1.2rem);
     letter-spacing: 5px;
     &::before {
@@ -35,6 +34,9 @@
     }
     @include tablet(){
       margin-top:-1.5%;
+    }
+    @include mobile(){
+      letter-spacing: 3.5px;
     }
     @include extra-small(){
       letter-spacing: 2px;
