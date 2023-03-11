@@ -69,9 +69,11 @@
       var(--bkg1) 0%,
       rgba(20, 20, 20, 0) 100%
     );
+    // background-color: red;
     height: var(--height);
     margin-top: calc(var(--height) * -1);
     top: 0px;
+    z-index: 2;
   }
   &::after {
     background: linear-gradient(0deg, var(--bkg1) 0%, rgba(20, 20, 20, 0) 100%);

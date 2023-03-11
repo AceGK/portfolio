@@ -107,8 +107,12 @@ p {
 }
 
 a {
+  font-size: 1rem;
   font-family: var(--body-font);
   text-decoration: none;
+  @include tablet() {
+    font-size: 0.8rem;
+  }
 }
 
 p > a {

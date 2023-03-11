@@ -1,19 +1,29 @@
 import styles from './SecondaryNav.module.scss'
 import { useTheme } from 'next-themes'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 
 const SecondaryNav = () => {
 
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
+  const prev = usePrevious(theme);
 
+
+function usePrevious(value) {
+  const ref = useRef();
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    ref.current = value;
+  }, [theme]); 
+  return ref.current;
+}
 
-  if (!mounted) {
-    return null
-  }
+  // useEffect(() => {
+  //   setMounted(true)
+  // }, [])
+
+  // if (!mounted) {
+  //   return null
+  // }
 
   return (
     <div className={styles.secondary_nav}>
@@ -34,7 +44,7 @@ const SecondaryNav = () => {
         title="CRT Mode"
         onClick={() => {
           if (theme === 'crt') {
-            setTheme('dark')
+            setTheme(prev)
           }
           else setTheme('crt')
         }}
