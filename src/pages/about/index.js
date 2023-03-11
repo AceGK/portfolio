@@ -118,11 +118,11 @@ function AboutModal(props) {
 
             <p>I was born in 1991 and raised in Dutchess County, NY, where I developed a passion for art, music, and technology. In the early 2000s I began to learn about assembling custom computers, graphic design, photography, animation, and coding.</p>
 
-            <p>After graduating from <Link href="https://www.wikiwand.com/en/Salisbury_School" target="_blank">Salisbury School</Link> in 2009, I went on to study photography at the <Link href="https://www.wikiwand.com/en/The_Art_Institute_of_Boston" target="_blank">Art Institute of Boston</Link>. I then transferred to the <Link href="https://www.wikiwand.com/en/San_Francisco_Art_Institute" target="_blank">San Francisco Art Institute</Link> in 2011. While attending college I discovered my love for web development while building and maintaining my art portfolio website.</p>
+            <p>After graduating from <Link href="https://www.wikiwand.com/en/Salisbury_School">Salisbury School</Link> in 2009, I went on to study photography at the <Link href="https://www.wikiwand.com/en/The_Art_Institute_of_Boston">Art Institute of Boston</Link>. I then transferred to the <Link href="https://www.wikiwand.com/en/San_Francisco_Art_Institute">San Francisco Art Institute</Link> in 2011. While attending college I discovered my love for web development while building and maintaining my art portfolio website.</p>
 
-            <p>In 2014, I landed a job as an IT manager & software developer at <Link href="https://www.wikiwand.com/en/Oaksterdam_University" target="_blank">Oaksterdam University</Link>. During this time, I delved deeper into programming and began to build web applications professionally for my employer and other SF Bay Area businesses.</p>
+            <p>In 2014, I landed a job as an IT manager & software developer at <Link href="https://www.wikiwand.com/en/Oaksterdam_University">Oaksterdam University</Link>. During this time, I delved deeper into programming and began to build web applications professionally for my employer and other SF Bay Area businesses.</p>
 
-            <p>In 2019, I attended a full-stack webdev course at <Link href="https://www.wikiwand.com/en/UC_Berkeley_Extension" target="_blank">UC Berkeley Extension</Link> to further my education and solidify my expertise. Today, I am a skilled and accomplished software engineer and I am always looking for new ways to improve, innovate, and create.</p>
+            <p>In 2019, I attended a full-stack webdev course at <Link href="https://www.wikiwand.com/en/UC_Berkeley_Extension">UC Berkeley Extension</Link> to further my education and solidify my expertise. Today, I am a skilled and accomplished software engineer and I am always looking for new ways to improve, innovate, and create.</p>
 
           </div>
         </div>
