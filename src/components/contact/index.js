@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import styles from './contact.module.scss'
+import styles from './Contact.module.scss'
 
-function Contact() {
+export default function ContactForm() {
 
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -34,7 +34,7 @@ function Contact() {
 
   return (
  
-    <div id="contact" className="page-container" >
+    <div id="contact">
       <div className={styles.success} style={{ display: success ? "block" : "none" }}>
         <p>Thank you for getting in touch!</p>
       </div>
@@ -77,10 +77,6 @@ function Contact() {
           }
         `}</style>
       </div>
-    
-
 
   );
 }
-
-export default Contact;
