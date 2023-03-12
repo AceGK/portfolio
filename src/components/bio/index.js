@@ -42,7 +42,7 @@ export default function Bio() {
 
           <h1>About Me</h1>
 
-          <p>I was born in 1991 and raised in Dutchess County, NY, where I developed a passion for art, music, and technology. In the early 2000s I began to learn about assembling custom computers, graphic design, photography, animation, and coding.</p>
+          <p>I was born in 1991 and raised in Dutchess County, NY, where I developed a passion for art and technology. In the early 2000s I began to learn about assembling custom computers, graphic design, photography, animation, and coding.</p>
 
           <p>After graduating from <Link href="https://www.wikiwand.com/en/Salisbury_School">Salisbury School</Link> in 2009, I went on to study photography at the <Link href="https://www.wikiwand.com/en/The_Art_Institute_of_Boston">Art Institute of Boston</Link>. I then transferred to the <Link href="https://www.wikiwand.com/en/San_Francisco_Art_Institute">San Francisco Art Institute</Link> in 2011. While attending college I discovered my love for web development while building and maintaining my art portfolio website.</p>
 
