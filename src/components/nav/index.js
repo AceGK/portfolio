@@ -21,7 +21,6 @@ function NavItem(props) {
 
   const activeLi = styles.activeLi;
   const active = styles.active;
-  console.log(router)
 
   return (
     <li className={router.pathname == props.href ? activeLi : ""}>

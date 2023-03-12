@@ -21,7 +21,7 @@ export default class ProjectData extends Component {
         ],
         description: 'My portfolio site, showcasing my work and personal projects',
         buttons: [
-          <Link href="https://github.com/AceGK/portfolio" className="btn" target="_blank" rel="noreferrer" key="1">
+          <Link href="https://github.com/AceGK/portfolio" className="btn" key="1">
             <i className="icon-github" title="Github"/> Github
           </Link>
         ],
@@ -38,7 +38,7 @@ export default class ProjectData extends Component {
         ],
         description: 'Work in progress. Ecommerce site for a cannabis dispensary built with Next.js, Algolia Instant Search, and Sanity CMS',
         buttons: [
-          <Link href="https://plpcsanjose.com" className="btn" target="_blank" rel="noreferrer" key="1">
+          <Link href="https://purplelotus.vercel.app" className="btn" key="1">
             <i className="icon-link" title="view site" /> View
           </Link>,
         ],
@@ -53,10 +53,10 @@ export default class ProjectData extends Component {
         ],
         description: 'IP address tracker built with NextJS, Ipify Geolocation API, and LeafletJS',
         buttons: [
-          <Link href="https://ip-tracker-acegk.vercel.app/" className="btn" target="_blank" rel="noreferrer" key="1">
+          <Link href="https://ip-tracker-acegk.vercel.app/" className="btn" key="1">
             <i className="icon-link" title="view site"/> View
           </Link>,
-          <Link href="https://github.com/AceGK/ip-tracker" className="btn" target="_blank" rel="noreferrer" key="2">
+          <Link href="https://github.com/AceGK/ip-tracker" className="btn" key="2">
             <i className="icon-github" title="Github"/> Github
           </Link>
         ],
@@ -72,10 +72,10 @@ export default class ProjectData extends Component {
         ],
         description: 'A vanilla JS tip calculator that evaluates cost per person based on bill amount and tip %',
         buttons: [
-          <Link href="https://acegk.github.io/tip-calculator/" className="btn" target="_blank" rel="noreferrer" key="1">
+          <Link href="https://acegk.github.io/tip-calculator/" className="btn" key="1">
             <i className="icon-link" title="view site"/> View
           </Link>,
-          <Link href="https://github.com/AceGK/tip-calculator" className="btn" target="_blank" rel="noreferrer" key="2">
+          <Link href="https://github.com/AceGK/tip-calculator" className="btn" key="2">
             <i className="icon-github" title="Github"/> Github
           </Link>
         ],
@@ -90,7 +90,7 @@ export default class ProjectData extends Component {
         ],
         description: 'Hal 9000 themed PC hardware usage meters',
         buttons: [
-          <Link href="https://github.com/AceGK/Hal9000-Rainmeter" className="btn" target="_blank" rel="noreferrer" key="1">
+          <Link href="https://github.com/AceGK/Hal9000-Rainmeter" className="btn" key="1">
             <i className="icon-github" title="Github"/> Github
           </Link>,
         ],
