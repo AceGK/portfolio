@@ -13,7 +13,7 @@ export default class ProjectData extends Component {
     projects: [
       {
         title: 'This Site',
-        logo: <AK style={{ fill: 'white' }} />,
+        logo: <AK />,
         icons: [
           <i className="icon-next-js" title="Next.js" key="1" />,
           <i className="icon-sass" title="SCSS" key="2"/>,
@@ -46,7 +46,7 @@ export default class ProjectData extends Component {
       },
       {
         title: 'IP Tracker',
-        logo: <IP style={{ fill: 'white' }} />,
+        logo: <IP  />,
         icons: [
           <i className="icon-next-js" title="Next.js" key="1" />,
           <i className="icon-sass" title="SCSS" key="2"/>,
@@ -64,7 +64,7 @@ export default class ProjectData extends Component {
       },
       {
         title: 'Tip Calculator',
-        logo: <Tipper style={{ fill: 'white' }} />,
+        logo: <Tipper />,
         icons: [
           <i className="icon-html5" title="HTML5" key="1" />,
           <i className="icon-css3" title="CSS3" key="2" />,

@@ -18,7 +18,7 @@ export default function Bio() {
 
   return (
     <div className={styles.about}>
-      <p>Hello!</p>
+      <p>Hello, World!</p>
       <p>My name is Ace and I live in San Jose, CA.
         I am a full-stack software engineer
         with a focus on front-end web development.
